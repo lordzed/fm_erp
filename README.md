@@ -2,7 +2,7 @@
   <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_31.jpg" width="550"/>
 </p>
 
-[![Build](https://github.com/lordzed/fm_erpactions/workflows/main.yaml/badge.svg)](https://github.com/lordzed/fm_erpactions/workflows/main.yaml)
+[![Build](https://github.com/lordzed/fm_erp/actions/workflows/main.yaml/badge.svg)](https://github.com/lordzed/fm_erpactions/workflows/main.yaml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/filebrowser/filebrowser)](https://goreportcard.com/report/github.com/filebrowser/filebrowser)
 [![Documentation](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/filebrowser/filebrowser)
 [![Version](https://img.shields.io/github/release/filebrowser/filebrowser.svg)](https://github.com/lordzed/fm_erpreleases/latest)
