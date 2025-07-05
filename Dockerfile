@@ -13,7 +13,7 @@ RUN addgroup -g $GID user && \
   chown -R user:user /config /database /srv
 
 # Copy files and set permissions
-COPY filebrowser /bin/filebrowser
+COPY filebrowser /bin/fm_erp
 COPY docker/common/ /
 COPY docker/alpine/ /
 
@@ -29,4 +29,4 @@ VOLUME /srv /config /database
 
 EXPOSE 80
 
-ENTRYPOINT [ "tini", "--", "/init.sh", "filebrowser", "--config", "/config/settings.json" ]
+ENTRYPOINT [ "tini", "--", "/init.sh", "fm_erp", "--config", "/config/settings.json" ]
