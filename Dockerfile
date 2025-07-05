@@ -13,11 +13,11 @@ RUN addgroup -g $GID user && \
   chown -R user:user /config /database /srv
 
 # Copy files and set permissions
-COPY fm_erp /bin/fm_erp
+COPY filebrowser /bin/filebrowser
 COPY docker/common/ /
 COPY docker/alpine/ /
 
-RUN chown -R user:user /bin/fm_erp /defaults healthcheck.sh init.sh
+RUN chown -R user:user /bin/filebrowser /defaults healthcheck.sh init.sh
 
 # Define healthcheck script
 HEALTHCHECK --start-period=2s --interval=5s --timeout=3s CMD /healthcheck.sh
@@ -29,4 +29,4 @@ VOLUME /srv /config /database
 
 EXPOSE 80
 
-ENTRYPOINT [ "tini", "--", "/init.sh", "fm_erp", "--config", "/config/settings.json" ]
+ENTRYPOINT [ "tini", "--", "/init.sh", "filebrowser", "--config", "/config/settings.json" ]
